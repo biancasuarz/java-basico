@@ -8,25 +8,25 @@ import java.util.Scanner;
             Locale.setDefault(Locale.US);
             Scanner sc = new Scanner(System.in);
 
-            int agencia;
-            String conta;
-            String nomeDoCliente;
-            double saldo = 237.48;
 
-            System.out.println("Por favor, digite o número da agência: ");
-            agencia = sc.nextInt();
+            Programa programa = new Programa();
 
-            System.out.println("Por favor, digite agora o número da sua conta: ");
-            conta = sc.next();
+            programa.agencia();
+            programa.agencia = sc.nextInt();
+
+            programa.conta();
+            programa.conta = sc.next();
 
             System.out.println("Digite agora seu nome completo: ");
-            nomeDoCliente = sc.next();
+            programa.nomeDoCliente = sc.next();
+
+
 
             System.out.println("Olá "
-                                + nomeDoCliente + ",obrigada por criar uma conta em nosso banco. Sua agencia é "
-                                + agencia + ", sua conta é "
-                                + conta + " e seu saldo é de "
-                                + saldo );
+                                + programa.nomeDoCliente + ",obrigada por criar uma conta em nosso banco. Sua agencia é "
+                                + programa.agencia + ", sua conta é "
+                                + programa.conta + " e seu saldo é de "
+                                + programa.saldo );
 
             sc.close();
         }
