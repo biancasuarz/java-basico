@@ -11,7 +11,7 @@ import java.util.Scanner;
             int agencia;
             String conta;
             String nomeDoCliente;
-            double saldo;
+            double saldo = 237.48;
 
             System.out.println("Por favor, digite o número da agência: ");
             agencia = sc.nextInt();
@@ -25,7 +25,8 @@ import java.util.Scanner;
             System.out.println("Olá "
                                 + nomeDoCliente + ",obrigada por criar uma conta em nosso banco. Sua agencia é "
                                 + agencia + ", sua conta é "
-                                + conta + " e seu saldo é de ");
+                                + conta + " e seu saldo é de "
+                                + saldo );
 
             sc.close();
         }
