@@ -8,7 +8,6 @@ import java.util.Scanner;
             Locale.setDefault(Locale.US);
             Scanner sc = new Scanner(System.in);
 
-
             Programa programa = new Programa();
 
             programa.agencia();
