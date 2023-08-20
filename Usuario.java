@@ -19,8 +19,6 @@ import java.util.Scanner;
             System.out.println("Digite agora seu nome completo: ");
             programa.nomeDoCliente = sc.next();
 
-
-
             System.out.println("Olá "
                                 + programa.nomeDoCliente + ",obrigada por criar uma conta em nosso banco. Sua agencia é "
                                 + programa.agencia + ", sua conta é "
